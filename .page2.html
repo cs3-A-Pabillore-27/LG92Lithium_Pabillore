@@ -1,0 +1,26 @@
+<!doctype html>
+ <head>
+ <title>Second page</title>
+ </head>
+  <body>
+   <img id="image" src="BWRN.png" width="700" height="auto" style="border:5px solid grey">
+   <br>
+   <button onclick = "changetoCRN()">Change to CRN</button>
+   <button onclick = "reverttoBWRN()">Change to BWRN</button>
+	
+    <script>
+	
+	var originalImageSrc = "BWRN.png";
+	var newImageSrc = "CRN.png";
+	
+	 function changetoCRN() {
+	   var image = document.getElementById("image");
+	   image.src = newImageSrc;
+	 }
+	 function reverttoBWRN() {
+	   var image = document.getElementById("image");
+	   image.src = originalImageSrc;
+	 }
+	</script>
+  </body>
+ </html>
